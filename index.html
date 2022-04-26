@@ -1,0 +1,82 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dojo Weather</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <h1>DojoWeather</h1>
+                <h3 onclick="alert('Loading Weather Report...')" id="city"><a href="#"></a> Oklahoma City</h3>
+                <h3 onclick="alert('Loading Weather Report...')" id="city"><a href="#"></a> chicago</h3>
+                <h3 onclick="alert('Loading Weather Report...')" id="city"><a href="#"></a> New York</h3>
+                
+            </nav>
+            <main>
+                <div class="topbar">
+                    <h2>Oklahoma City</h2>
+                    <p>Show Temperature in</p>
+                    <form>
+                        <select name="temp" id="temp">
+                            <option value="faren">Fº</option>
+                            <option value="celc">Cº</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="columns">
+                    <div class="week">
+                        <h3>Today</h3>
+                        <img class="some" src="images/some_rain.png" alt="rain">
+                        <p>Some Rain</p>
+                        <div class="fc">
+                            <h3 class="F">24º F</h3>
+                            <h3 class="C">18º C</h3>
+                        </div>
+                    </div>
+                    <div class="week">
+                        <h3>Tomorrow</h3>
+                        <img class="some" src="images/some_sun.png" alt="rain">
+                        <p>Some Rain</p>
+                        <div class="fc">
+                            <h3 class="F">27º F</h3>
+                            <h3 class="C">19º C</h3>
+                        </div>
+                    </div>
+                    <div class="week">
+                        <h3>Friday</h3>
+                        <img class="some" src="images/some_clouds.png" alt="rain">
+                        <p>Some Rain</p>
+                        <div class="fc">
+                            <h3 class="F">21º F</h3>
+                            <h3 class="C">16º C</h3>
+                        </div>
+                    </div>
+                    <div class="week">
+                        <h3>Saturday</h3>
+                        <img class="some" src="images/some_sun.png" alt="rain">
+                        <p>Some Rain</p>
+                        <div class="fc">
+                            <h3 class="F">26º F</h3>
+                            <h3 class="C">21º C</h3>
+                        </div>
+                    </div>
+                </div>
+                <div id="cookie">
+                    <img src="images/cookie.png" alt="cookie" class="cookiepic">
+                    <div class="header">
+                        <span>Stop! Cookie time.</span>
+                        <p>We  use Cookies (sadly not the edible ones;) ) to personalize contentand ads, provide social media features, and to analyze out traffic. <a href="#">Read more...</a></p>
+                    </div>
+                    <div class="btn">
+                        <button onclick="hide()" id="accept">I Accept</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <script src="script.js"></script>
+    </body>
+    </html>
